@@ -3,7 +3,10 @@ $dGreen: #081c15;
 $mGreen: #40916c;
 $lGreen: #74c69d;
 $wGreen: #d8f3dc;
-$sgGreen: #52b788;
+
+$mobile: 320px;
+$tablet: 700px;
+$desktop: 1000px;
 
 
 /*For any image in the website*/
@@ -13,12 +16,13 @@ img{
 }
 
 button{
-  width: 180px;
+  width: 160px;
   padding: 10px;
   margin: 30px 0px;
   border: none;
   outline: none;
-  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 a{
@@ -37,4 +41,27 @@ a{
 
 i{
   color: orange
+}
+
+.hide{
+  display: none;
+}
+
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
 }

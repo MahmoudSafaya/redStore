@@ -1,0 +1,446 @@
+@import 'variables';
+
+
+//Responsive Design For Mobile.
+@include mobile{
+  
+  /*Home page style*/
+  .first{
+    height: auto;
+    padding: 37px 20px;
+
+    /*Style of the logo and navbar*/
+    header{
+      flex-direction: column;
+      padding: 20px 25px;
+
+      .logo{
+        display: block;
+        width: 150px;
+        height: 40px;
+      }
+    
+      nav{    
+        ul{
+          li{
+            margin: 0px 5px;
+            font-size: 14px;
+
+            &:last-of-type{
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+
+     /*Style of the intro*/
+    section{
+      margin: 40px auto 20px;
+      display: block;
+
+      .account{
+        width: 80%;
+        margin: 70px auto;
+
+        .container2{
+          margin: 50px 0 30px;
+        }
+      }
+
+      .intro{
+        width: auto;
+        padding: 10px;
+        margin-top: 20px;
+
+        h1{
+          font-size: 32px;
+        }
+
+        p{
+          font-size: 16px;
+        }
+      }
+
+      .bg{
+        display: none;
+      }
+    }
+  }
+
+  /*Featured, latest product style*/
+  .second{
+    margin: 60px 0px;
+
+    .container{
+      width: 100%;
+      margin: 0px;
+
+      h1{
+        margin: 20px auto;
+      }
+
+      section{
+        margin: 40px 0px;
+        align-items: center;
+        flex-direction: column;
+
+        .item{
+          width: 50%;
+          margin: 20px auto;
+          text-align: center;
+
+          .image-item{
+            height: 315px;
+          }
+
+          .rate{
+            width: 100%;
+            margin: 10px 0;
+
+            img{
+              width: 7%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  /*Band style*/
+  .band{
+    padding: 60px 10px 10px;
+
+
+    .container{
+      width: 100%;
+      flex-direction: column;
+
+      .band-info{
+        margin: 40px 30px;
+
+        button{
+          background: $wGreen;
+
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  /*Testimonials style*/
+  .testimonials{
+    margin: 80px 0px;
+
+    .container{
+      width: 100%;
+      margin: 0;
+      align-items: center;
+      flex-direction: column;
+
+      .person{
+        width: 70%;
+        padding: 15px 20px 20px;
+        margin: 20px 0;
+
+        .fa-quote-left{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  /*Footer style*/ 
+  footer{
+    padding: 40px 0 20px;
+
+    .container{
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+      padding: 40px 30px;
+
+      &:last-of-type{
+        justify-content: space-around;
+        flex-direction: column;
+      }
+
+      .downloads{
+      margin-bottom: 30px;
+      }
+
+      .logoInfo{
+        width: 100%;
+        margin: 30px 0;
+      }
+
+      .links,
+      .toFollow{
+        width: 100%;
+        margin: 20px 0;
+
+        span{
+          display: inline;
+          margin: 5px;
+        }
+      }
+    }
+
+    p{
+      margin: 10px 0px;
+    }
+  }
+  // END OF THE HOME PAGE STYLE AND START OF THE OTHER PAGES STYLE
+
+  
+  //style of the navbar only
+  header{
+    flex-direction: column;
+    padding: 20px 25px;
+
+    .logo{
+      display: block;
+      width: 150px;
+      height: 40px;
+    }
+  
+    nav{    
+      ul{
+        li{
+          margin: 0px 5px;
+          font-size: 14px;
+
+          &:last-of-type{
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  //ABOUT PAGE STYLE
+  .about{
+    margin: 0px;
+
+    .container{
+      width: 100%;
+      margin: 0;
+      padding: 0px 35px ;
+
+      .theDiv{
+        margin: 100px 0px;
+
+        &:last-of-type{
+          margin-bottom: 0px;
+        }
+
+        h1{
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  //CONTACT PAGE STYLE
+  .contact{
+    margin: 0px;
+
+    .container{
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+      padding: 40px;
+
+      .contact-info{
+        margin: 0px;
+        margin-bottom: 60px;
+
+        h1{
+          margin: 40px 0 15px;
+        }
+
+        p{
+          margin: 15px 0px;
+
+          &:first-of-type{
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      .contact-form{
+
+        input{
+          width: 100%;
+          display: block;
+          margin: 15px 0px;
+          padding: 10px 20px;
+        }
+
+        input[name="phone"] {
+          margin: 0px;
+        }
+      }
+    }
+  }
+  
+}
+
+
+// ...........................................................................................
+// ...........................................................................................
+
+//Responsive Design For Tablet.
+@include tablet{
+
+  /*Home page style*/
+  .first{
+    height: auto;
+    width: 100%;
+
+    /*Style of the logo and navbar*/
+    header{
+      flex-direction: row;
+
+      .logo{
+        display: inline-block;
+        width: 130px;
+        height: 35px;
+      }
+    }
+
+     /*Style of the intro*/
+    section{
+      margin: 40px auto 20px;
+      display: flex;
+      padding: 0 40px;
+
+      .account{
+        width: 80%;
+        margin: 70px auto;
+
+        .container2{
+          margin: 50px 0 30px;
+        }
+      }
+
+      .intro{
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+
+        h1{
+          font-size: 32px;
+        }
+
+        p{
+          font-size: 16px;
+        }
+      }
+
+      .bg{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+
+  /*Featured, latest product style*/
+  .second{
+    margin: 60px 0px;
+
+    .container{
+      width: 100%;
+      margin: 0px;
+
+      h1{
+        margin: 20px auto;
+      }
+
+      section{
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 30px;
+
+        .item{
+          width: 20%;
+          margin: 20px 0;
+          text-align: center;
+
+          .image-item{
+            height: 300px;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  /*Band style*/
+  .band{
+    .container{
+      width: 100%;
+      flex-direction: row;
+      .band-img{
+        width: 100%;
+      }
+      .band-info{
+       width: 100%;
+      }
+    }
+  }
+    
+  /*Footer style*/ 
+  footer{
+    .container{
+      width: 80%;
+      margin: 0 auto;
+
+      .downloads{
+        width: 100%;
+        text-align: center;
+      }
+      .links,
+      .toFollow{
+        text-align: center;
+      }
+    }
+  }
+
+
+  // END OF THE HOME PAGE STYLE AND START OF THE OTHER PAGES STYLE
+
+  //style of the navbar only
+  header{
+    flex-direction: row;
+    padding: 20px;
+
+    .logo{
+      display: inline-block;
+      width: 130px;
+      height: 35px;
+    }
+  }
+
+  .nextPage{
+    margin-left: 30px;
+  }
+}
+
+
+
+// Responsive Design For Desktop
+@include desktop{
+  @import '../styles/style.scss';
+  @import '../styles/about.scss';
+  @import '../styles/contact.scss';
+  @import '../styles/account.scss';
+}
