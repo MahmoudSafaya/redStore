@@ -37,7 +37,26 @@ i {
   display: none;
 }
 
-@media (min-width: 320px) {
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu i {
+  font-size: 32px;
+  color: black;
+}
+
+.close {
+  display: none;
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+  text-align: right;
+  margin: 30px 50px;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
   /*Home page style*/
   .first {
     height: auto;
@@ -46,24 +65,36 @@ i {
     /*Style of the intro*/
   }
   .first header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding: 20px 25px;
   }
   .first header .logo {
-    display: block;
     width: 150px;
     height: 40px;
   }
+  .first header nav {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #010101;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  .first header nav ul {
+    margin-top: 85px;
+  }
   .first header nav ul li {
-    margin: 0px 5px;
-    font-size: 14px;
+    margin: 45px 0px;
+    font-size: 18px;
+    display: block;
   }
   .first header nav ul li:last-of-type {
     width: 25px;
     height: 25px;
+  }
+  .first header nav ul li a {
+    color: white;
   }
   .first section {
     margin: 40px auto 20px;
@@ -93,6 +124,7 @@ i {
   /*Featured, latest product style*/
   .second {
     margin: 60px 0px;
+    width: 100%;
   }
   .second .container {
     width: 100%;
@@ -211,24 +243,37 @@ i {
     margin: 10px 0px;
   }
   header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 20px 25px;
+    padding: 45px;
   }
   header .logo {
     display: block;
     width: 150px;
     height: 40px;
   }
+  header nav {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #010101;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  header nav ul {
+    margin-top: 85px;
+  }
   header nav ul li {
-    margin: 0px 5px;
-    font-size: 14px;
+    margin: 45px 0px;
+    font-size: 18px;
+    display: block;
   }
   header nav ul li:last-of-type {
     width: 25px;
     height: 25px;
+  }
+  header nav ul li a {
+    color: white;
   }
   .about {
     margin: 0px;
@@ -281,9 +326,19 @@ i {
   .contact .container .contact-form input[name="phone"] {
     margin: 0px;
   }
+  .menu {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .nextPage {
+    width: 100%;
+    padding-left: 35px;
+  }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 999px) {
   /*Home page style*/
   .first {
     height: auto;
@@ -400,8 +455,90 @@ i {
     width: 130px;
     height: 35px;
   }
+  header nav {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #010101;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  header nav ul {
+    margin-top: 85px;
+  }
+  header nav ul li {
+    margin: 45px 0px;
+    font-size: 18px;
+    display: block;
+  }
+  header nav ul li:last-of-type {
+    width: 25px;
+    height: 25px;
+  }
+  header nav ul li a {
+    color: white;
+  }
+  .menu {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
   .nextPage {
     margin-left: 30px;
+  }
+  .about {
+    margin: 0px;
+  }
+  .about .container {
+    width: 100%;
+    margin: 0;
+    padding: 0px 35px;
+  }
+  .about .container .theDiv {
+    margin: 100px 0px;
+  }
+  .about .container .theDiv:last-of-type {
+    margin-bottom: 0px;
+  }
+  .about .container .theDiv h1 {
+    font-size: 32px;
+  }
+  .contact {
+    margin: 0px;
+  }
+  .contact .container {
+    width: 100%;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+  }
+  .contact .container .contact-info {
+    margin: 0px;
+    margin-bottom: 60px;
+  }
+  .contact .container .contact-info h1 {
+    margin: 40px 0 15px;
+  }
+  .contact .container .contact-info p {
+    margin: 15px 0px;
+  }
+  .contact .container .contact-info p:first-of-type {
+    margin-bottom: 30px;
+  }
+  .contact .container .contact-form input {
+    width: 100%;
+    display: block;
+    margin: 15px 0px;
+    padding: 10px 20px;
+  }
+  .contact .container .contact-form input[name="phone"] {
+    margin: 0px;
   }
 }
 
@@ -439,6 +576,22 @@ i {
   .hide {
     display: none;
   }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
+  }
   /*For any image in the website*/
   img {
     width: 100%;
@@ -471,6 +624,22 @@ i {
   }
   .hide {
     display: none;
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
   }
   * {
     -webkit-box-sizing: border-box;
@@ -841,6 +1010,22 @@ i {
   .hide {
     display: none;
   }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
+  }
   /*For any image in the website*/
   img {
     width: 100%;
@@ -873,6 +1058,22 @@ i {
   }
   .hide {
     display: none;
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
   }
   * {
     -webkit-box-sizing: border-box;
@@ -1013,6 +1214,22 @@ i {
   .hide {
     display: none;
   }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
+  }
   /*For any image in the website*/
   img {
     width: 100%;
@@ -1045,6 +1262,22 @@ i {
   }
   .hide {
     display: none;
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
   }
   * {
     -webkit-box-sizing: border-box;
@@ -1201,6 +1434,22 @@ i {
   .hide {
     display: none;
   }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
+  }
   /*For any image in the website*/
   img {
     width: 100%;
@@ -1233,6 +1482,22 @@ i {
   }
   .hide {
     display: none;
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .menu i {
+    font-size: 32px;
+    color: black;
+  }
+  .close {
+    display: none;
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+    margin: 30px 50px;
   }
   * {
     -webkit-box-sizing: border-box;

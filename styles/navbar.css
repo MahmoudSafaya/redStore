@@ -37,6 +37,25 @@ i {
   display: none;
 }
 
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu i {
+  font-size: 32px;
+  color: black;
+}
+
+.close {
+  display: none;
+  font-size: 32px;
+  color: red;
+  cursor: pointer;
+  text-align: right;
+  margin: 30px 50px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

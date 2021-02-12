@@ -1,18 +1,18 @@
 
-//Account page script
-const loginHeader = document.querySelector('.login-header');
-const registerHeader = document.querySelector('.register-header');
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('nav');
+const close = document.querySelector('.close');
 
-const login = document.querySelector('.login');
-const register = document.querySelector('.register');
+menu.addEventListener('click', () => {
 
-loginHeader.addEventListener('click', () => {
-  login.classList.remove('hide');
+  menu.style.display = 'none';
+  nav.style.display = 'block';
+  close.style.display = 'block';
 
-  register.classList.add('hide');
 });
-registerHeader.addEventListener('click', () => {
-  register.classList.remove('hide');
 
-  login.classList.add('hide');
+close.addEventListener('click', () => {
+  nav.style.display = 'none';
+  menu.style.display = 'block';
+  close.style.display = 'none';
 });
