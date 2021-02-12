@@ -255,9 +255,7 @@ header nav ul li:last-of-type {
 }
 
 .first section .container2 button:hover {
-  background: rgba(0, 255, 0, 0.8);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background: rgba(26, 233, 26, 0.8);
 }
 
 .first section .container2 .login,

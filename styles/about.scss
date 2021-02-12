@@ -41,11 +41,20 @@
       .s-btn{
         background: #31dd8e;
         box-shadow: 1px 1px 5px #080;
+
+        &:hover{
+          background: #05a75d;
+          color: white;
+        }
       }
     }
     .f-btn{
       background: $dGreen;
       box-shadow: 1px 1px 5px #010101;
+
+      &:hover{
+        background: #000;
+      }
       a{
         color: white;
       }

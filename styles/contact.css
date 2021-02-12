@@ -258,4 +258,8 @@ header nav ul li:last-of-type {
           box-shadow: 1px 1px 5px #080;
   font-weight: 600;
 }
+
+.contact .container .contact-form button:hover {
+  background: #05a75d !important;
+}
 /*# sourceMappingURL=contact.css.map */

@@ -271,6 +271,10 @@ header nav ul li:last-of-type {
   background: #081c15;
 }
 
+.first section .intro button:hover {
+  background: #000;
+}
+
 .first section .intro button a {
   color: #d8f3dc;
   font-size: 18px;
@@ -385,6 +389,10 @@ header nav ul li:last-of-type {
   background: #d8f3dc;
 }
 
+.band .container .band-info button:hover {
+  background: #31dd8e;
+}
+
 .band .container .band-info button a {
   font-size: 18px;
 }
@@ -442,6 +450,24 @@ header nav ul li:last-of-type {
 
 .testimonials .container .person .person-img img {
   border-radius: 50%;
+}
+
+.toTop {
+  position: fixed;
+  width: 80px;
+  right: 60px;
+  bottom: 60px;
+  background: #31dd8e !important;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 5px #080;
+          box-shadow: 1px 1px 5px #080;
+  display: none;
+  border-radius: 5px;
+}
+
+.toTop:hover {
+  background: #05a75d !important;
 }
 
 /*Footer style*/

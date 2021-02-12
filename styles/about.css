@@ -226,10 +226,19 @@ header nav ul li:last-of-type {
           box-shadow: 1px 1px 5px #080;
 }
 
+.about .container .theDiv .s-btn:hover {
+  background: #05a75d;
+  color: white;
+}
+
 .about .container .f-btn {
   background: #081c15;
   -webkit-box-shadow: 1px 1px 5px #010101;
           box-shadow: 1px 1px 5px #010101;
+}
+
+.about .container .f-btn:hover {
+  background: #000;
 }
 
 .about .container .f-btn a {
