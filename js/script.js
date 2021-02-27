@@ -24,7 +24,7 @@ const toTop = document.querySelector('.toTop');
 
 window.addEventListener('scroll', () => {
   if(window.pageYOffset > 400) {
-    toTop.style.display = 'block';
+    toTop.style.display = 'none';
   } else {
     toTop.style.display = 'none';
   }

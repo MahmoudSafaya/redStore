@@ -188,6 +188,10 @@ header nav ul li:last-of-type {
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Home page style*/
 .first {
   width: 100%;
